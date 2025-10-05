@@ -1,19 +1,19 @@
-###  Retrieval-Augmented Generation (RAG) App
+#  Retrieval-Augmented Generation (RAG) App
 
 This project is a Retrieval-Augmented Generation (RAG) chatbot that allows users to upload documents and ask questions about them. It combines the power of modern LLMs with custom embeddings to deliver accurate, context-aware answers.
 
 ## Features Overview
-#  Document & Image Upload
+###  Document & Image Upload
 - Supported formats: PDF, JPG, PNG, JPEG
 - PDF Parsing: Utilizes PyMuPDF for fast and reliable text extraction
 - Image OCR: Powered by EasyOCR to extract readable text from scanned images or photos
 
-#  Interactive Chat Interface
+###   Interactive Chat Interface
 - Built with Streamlit for a responsive and intuitive user experience
 - Users can ask natural language questions directly about uploaded content
 - Real-time responses generated using integrated LLMs
 
-#  Retrieval-Augmented Generation (RAG) Pipeline
+###   Retrieval-Augmented Generation (RAG) Pipeline
 - Chunking: Uploaded documents are split into manageable text chunks
 - Embedding: Each chunk is embedded using language model embeddings
 - Vector Storage: Embeddings are stored in FAISS, a high-performance vector database
@@ -21,20 +21,20 @@ This project is a Retrieval-Augmented Generation (RAG) chatbot that allows users
 - Generation: Retrieved context is passed to the LLM for grounded answer generation
 - Execution: Orchestrated using LangChain for modular and scalable chain execution
 
-#  Language Model Integration
+###   Language Model Integration
 - Supports Ollama and Cohere for flexible and powerful text generation
 - Easily extendable to other LLM providers
 
-#  Named Entity Recognition (NER)
+###   Named Entity Recognition (NER)
 - Integrated transformers model: dslim/bert-base-NER
 - Automatically identifies and highlights key entities (names, organizations, dates, etc.) within documents
 
 ##  Architecture
-#  Backend
+###   Backend
 - Built with Flask to handle file uploads, preprocessing, and API endpoints
 - Manages RAG pipeline, NER tagging, and LLM orchestration
 
-#  Frontend
+###   Frontend
 - Developed using Streamlit
 - Provides a clean, interactive interface for document upload and chat-based querying
 
@@ -99,7 +99,7 @@ git pull nomic-embed-text
 pip install -r requirements.txt
 ```
 
-5. **Run the app**
+5. **Run the app:**
 Open bash terminal and run:
 - Flask (Backend)
 ```bash
