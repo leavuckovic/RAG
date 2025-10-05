@@ -113,7 +113,7 @@ streamlit run streamlit_app.py
 ## Example Questions:
 ### Input: image - invoice_image.png
 - Tell me property details.  
-Answer: Sure, here are the property details from the context:  Type: Famiiy House  Unit Price (EUR): 250,000,00  Total (EUR): 250,000,00  Purchase of Residential Property:
+Answer: Sure, here are the property details from the context:  Type: Famiiy House  Unit Price (EUR): 250,000,00  Total (EUR): 250,000,00  
 
 - How much is advance payment?  
 Answer: The advance payment is 25,000,00.
