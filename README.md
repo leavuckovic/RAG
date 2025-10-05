@@ -112,36 +112,32 @@ streamlit run streamlit_app.py
 
 ## Example Questions:
 ### Input: image - invoice_image.png
-- Tell me property details.:
-Answer: Sure, here are the property details from the context:
+- Tell me property details.  Answer: Sure, here are the property details from the context:
 
-Type: Famiiy House:
-Unit Price (EUR): 250,000,00:
-Total (EUR): 250,000,00:
-Purchase of Residential Property:
+Type: Famiiy House  Unit Price (EUR): 250,000,00  Total (EUR): 250,000,00  Purchase of Residential Property:
 
-- How much is advance payment?:
+- How much is advance payment?  
 Answer: The advance payment is 25,000,00.
 
-- What is invoice number?:
+- What is invoice number?  
 Answer: The invoice number is RE-2025-001.
 
-- What is the date of the issue?:
+- What is the date of the issue?  
 Answer: The date of issue is October 5, 2025.
 ### Input: documents : Contract.pdf
-- Who is buyer?:
+- Who is buyer?  
 Answer: The buyer is Ana Kovač.
 
-- Who is seller?:
+- Who is seller?  
 Answer: The seller is Marko Horvat.
 
-- What is the address and purchase price on house?:
-Answer: Sure, here is the answer:
+- What is the address and purchase price on house?  
+Answer: Sure, here is the answer  
 Address: Braće Stipčić Street 12, 51000 Rijeka Purchase Price: EUR 250,000.00
 
-- Is there tax obligation?:
+- Is there tax obligation?   
 Answer: Yes, the buyer is obligated to pay real estate transfer tax in the amount of 3% of the purchase price, which is EUR 25,000.00.
 
-- How many days in advance buyer needs to pay advance payment?:
+- How many days in advance buyer needs to pay advance payment?  
 Answer: According to the context, the buyer needs to pay an advance payment of EUR 25,000.00 within 5 days of signing the agreement.
 
