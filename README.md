@@ -62,7 +62,11 @@ RAG/
 ├── data/
 ├── dummy_doc/
 ├── venv
+├── .dockerignore
+├── .env
 ├── .gitignore
+├── docker-compose.yml
+├── Dockerfile
 ├── example.env
 ├── README.md
 ├── requirements.txt
@@ -109,6 +113,22 @@ python run.py
 ```bash
 streamlit run streamlit_app.py
 ```
+## Docker setup
+
+### Install Docker Desktop (for Windows)
+- Install Docker Desktop (https://www.docker.com/products/docker-desktop)
+- Run the Docker Desktop app
+
+### Run the app in Docker
+- Go to RAG folder
+```bash
+cd RAG
+```
+- Run the app with docker. This maps port 8501 from the container to your local machine.
+```bash
+docker-compose up
+```
+- Go to port http://localhost:8501 
 
 ## Example Questions:
 ### Input: image - invoice_image.png

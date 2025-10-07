@@ -26,9 +26,9 @@ load_dotenv()  # Loads from .env file
 
 
 #LLM 
-llm = OllamaLLM(model='gemma:2b', temperature=0) #Comment if you are using COHERE LLM
+llm = OllamaLLM(model='tinyllama', temperature=0,base_url='http://ollama:11434') #Comment if you are using COHERE LLM
 #Embedding model
-embeddings = OllamaEmbeddings(model='nomic-embed-text') #Comment if you are using COHERE embedding
+embeddings = OllamaEmbeddings(model='nomic-embed-text',base_url='http://ollama:11434') #Comment if you are using COHERE embedding
 #NER    
 ner = pipeline("ner", model="dslim/bert-base-NER", grouped_entities=True)
 #OCR reader

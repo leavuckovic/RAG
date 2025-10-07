@@ -20,8 +20,8 @@ api = Blueprint('api', __name__)
 # llm = ChatCohere(model="command-r-plus-08-2024", temperature=0, cohere_api_key=cohere_api_key)
 # embeddings= CohereEmbeddings(model="embed-english-v3.0",cohere_api_key=cohere_api_key)
 
-llm = OllamaLLM(model='gemma:2b', temperature=0) #Comment if you are using COHERE LLM
-embeddings = OllamaEmbeddings(model='nomic-embed-text') #Comment if you are using COHERE embedding
+llm = OllamaLLM(model='tinyllama', temperature=0,base_url='http://ollama:11434') #Comment if you are using COHERE LLM
+embeddings = OllamaEmbeddings(model='nomic-embed-text',base_url='http://ollama:11434') #Comment if you are using COHERE embedding
 
 
 @api.route('/upload', methods=['POST'])

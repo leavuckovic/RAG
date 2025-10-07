@@ -14,7 +14,7 @@ uploaded_files = st.file_uploader("Choose PDF or image files", type=["pdf", "png
 if st.button("Upload"):
     if uploaded_files:
         files = [("documents", (f.name, f.read())) for f in uploaded_files]
-        res = requests.post("http://localhost:5000/upload", files=files)
+        res = requests.post("http://backend:5000/upload", files=files)
         if res.ok:
             st.session_state.session_id = res.json()["session_id"]
             st.success(f"Uploaded! Session ID: {st.session_state.session_id}")
@@ -35,7 +35,7 @@ if st.button("Ask"):
             "session_id": st.session_state.session_id,
             "question": question
         }
-        res = requests.post("http://localhost:5000/ask", json=payload)
+        res = requests.post("http://backend:5000/ask", json=payload)
         if res.ok:
             st.markdown(f"**Answer:** {res.json()['answer']}")
             st.markdown(f"**NER analysis:** {res.json()['entities']}")
