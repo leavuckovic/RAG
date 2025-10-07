@@ -87,7 +87,7 @@ Follow instructions at [ollama.com](https://ollama.com/) to install and run Olla
 4. **Pull models from Ollama**
 - LLM model:
 ```bash
-git pull gemma:2b
+git pull tinyllama
 ```
 - Embedding model:
 ```bash
