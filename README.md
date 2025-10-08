@@ -87,11 +87,11 @@ Follow instructions at [ollama.com](https://ollama.com/) to install and run Olla
 4. **Pull models from Ollama**
 - LLM model:
 ```bash
-git pull tinyllama
+ollama pull tinyllama
 ```
 - Embedding model:
 ```bash
-git pull nomic-embed-text
+ollama pull nomic-embed-text
 ```
 5. **Get COHERE trial API key (Optional)**
 - Go to COHERE page (https://dashboard.cohere.com/) and get API key
